@@ -5,7 +5,7 @@ A simple bash script that outputs "MIC" and "CAM" respectively if either is in u
 Waybar config.jsonc custom config to show in waybar.
 ```
 "custom/webcam": {
-        "exec": "$HOME/.config/waybar/check-webcam.sh",
+        "exec": "$HOME/.config/waybar/mic-cam-usage-indicator.sh",
         "interval": 3,  // Update every 5 seconds
         "format": "{0} {1}",
 	"escape": true
