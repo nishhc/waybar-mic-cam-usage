@@ -15,7 +15,7 @@ fi
 webcam_status=$(lsmod | grep uvcvideo | head -n 1 | awk '{print $3}')
 webcam_module=$(lsmod | grep uvcvideo | head -n 1 | awk '{print $2}')
 
-if [ "$webcam_status" == "1" ] && [ "$webcam_module" == modu ]; then
+if [ "$webcam_status" == "1" ] && [ "$webcam_module" == "$modu" ]; then
     if [ "$webcam_active" == false ]; then
         start_time=$(date +%s)
         webcam_active=true
